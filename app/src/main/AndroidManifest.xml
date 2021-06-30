@@ -9,21 +9,21 @@
         android:roundIcon="@drawable/peso"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".NovaContaActivity">
-        </activity>
-        <activity android:name=".DashboardActivity" />
-        <activity android:name=".LoginActivity">
+        <activity android:name=".ui.BiometriaActivity"></activity>
+        <activity android:name=".ui.NovaContaActivity"></activity>
+        <activity android:name=".ui.DashboardActivity" />
+        <activity android:name=".ui.LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ResultadoNcdActivity" />
-        <activity android:name=".NcdActivity" />
-        <activity android:name=".ResultadoImcActivity" />
-        <activity android:name=".ImcActivity" />
-        <activity android:name=".MainActivity" />
+        <activity android:name=".ui.ResultadoNcdActivity" />
+        <activity android:name=".ui.NcdActivity" />
+        <activity android:name=".ui.ResultadoImcActivity" />
+        <activity android:name=".ui.ImcActivity" />
+        <activity android:name=".ui.MainActivity" />
 
         <meta-data
             android:name="preloaded_fonts"

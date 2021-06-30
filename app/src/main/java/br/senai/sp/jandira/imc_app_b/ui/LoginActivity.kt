@@ -1,12 +1,10 @@
-package br.senai.sp.jandira.imc_app_b
+package br.senai.sp.jandira.imc_app_b.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
+import br.senai.sp.jandira.imc_app_b.R
 import kotlinx.android.synthetic.main.activity_login.*
-import java.time.LocalDate
-import java.time.format.DateTimeFormatter
 
 class LoginActivity : AppCompatActivity() {
 
@@ -15,7 +13,8 @@ class LoginActivity : AppCompatActivity() {
         setContentView(R.layout.activity_login)
 
         button_entrar.setOnClickListener {
-            val intent = Intent(this, DashboardActivity::class.java)
+//            val intent = Intent(this, DashboardActivity::class.java)
+            val intent = Intent(this, BiometriaActivity::class.java)
             startActivity(intent)
         }
 

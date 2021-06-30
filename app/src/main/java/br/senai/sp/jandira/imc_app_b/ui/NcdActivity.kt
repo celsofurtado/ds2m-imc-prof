@@ -1,10 +1,10 @@
-package br.senai.sp.jandira.imc_app_b
+package br.senai.sp.jandira.imc_app_b.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import android.widget.*
+import br.senai.sp.jandira.imc_app_b.R
 
 class NcdActivity : AppCompatActivity() {
 
@@ -46,7 +46,12 @@ class NcdActivity : AppCompatActivity() {
             Toast.makeText(this, "Selecione o sexo", Toast.LENGTH_SHORT).show()
         }
 
-        val ncd = calcularNcd(peso, faixaEtaria, nivelAtividade, sexo)
+        val ncd = br.senai.sp.jandira.imc_app_b.calcularNcd(
+            peso,
+            faixaEtaria,
+            nivelAtividade,
+            sexo
+        )
 
         val banana = Intent(this, ResultadoNcdActivity::class.java)
         banana.putExtra("valor_ncd", ncd)

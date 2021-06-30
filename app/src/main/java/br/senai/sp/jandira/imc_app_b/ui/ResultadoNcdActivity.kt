@@ -1,8 +1,9 @@
-package br.senai.sp.jandira.imc_app_b
+package br.senai.sp.jandira.imc_app_b.ui
 
 import android.os.Bundle
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import br.senai.sp.jandira.imc_app_b.R
 
 class ResultadoNcdActivity : AppCompatActivity() {
 

@@ -1,13 +1,12 @@
-package br.senai.sp.jandira.imc_app_b
+package br.senai.sp.jandira.imc_app_b.ui
 
 import android.app.DatePickerDialog
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Menu
 import android.view.MenuItem
-import android.widget.ArrayAdapter
+import br.senai.sp.jandira.imc_app_b.R
 import br.senai.sp.jandira.imc_app_b.dao.UsuarioDao
-import br.senai.sp.jandira.imc_app_b.model.NivelAtividade
 import br.senai.sp.jandira.imc_app_b.model.Usuario
 import kotlinx.android.synthetic.main.activity_nova_conta.*
 import kotlinx.android.synthetic.main.toolbar.*
@@ -53,7 +52,7 @@ class NovaContaActivity : AppCompatActivity() {
     }
 
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
-        menuInflater.inflate(R.menu.menu_novo_usuario, menu)
+        menuInflater.inflate(R.menu.menu_salvar, menu)
         return super.onCreateOptionsMenu(menu)
     }
 

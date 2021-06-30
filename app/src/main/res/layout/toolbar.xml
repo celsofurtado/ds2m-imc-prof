@@ -15,6 +15,6 @@
     app:subtitleTextColor="@android:color/white"
     app:title="Profile"
     app:titleTextColor="@android:color/white"
-    app:menu="@menu/menu_novo_usuario">
+    app:menu="@menu/menu_salvar">
 
 </androidx.appcompat.widget.Toolbar>
